@@ -10,9 +10,11 @@
 sheetID="_"
 
 
-# The column with the serial number in it
+# The column in the GSheet with the serial number in it
 serialCol="A"
-# The column with the device name in it.  Note we use column C so that a CSV file downloaded
+
+# The column in the GSheet with the device name in it.  
+# Note we use column C so that a CSV file downloaded
 # from Apple School/Business Manager can be imported/appended as new devices are purchased
 # The ASM/ABM CSV uses column A for serial number and column B for device type
 nameCol="C"
