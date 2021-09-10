@@ -31,6 +31,8 @@ if test -z $dname ; then
   dname=$serialNumber
 fi
 
+# If a device naming convention is used, consider adding code here to test for conformation
+
 # For testing. Comment out for production
 echo $dname
 
