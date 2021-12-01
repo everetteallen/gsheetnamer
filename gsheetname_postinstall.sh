@@ -23,10 +23,10 @@ nameCol="C"
 serialNumber=$(ioreg -c IOPlatformExpertDevice -d 2 | awk -F\" '/IOPlatformSerialNumber/{print $(NF-1)}')
 
 # Look up serial number from Google Sheet using the Google Visualization api returning simple csv
-dname=$(curl --silent "https://docs.google.com/spreadsheets/d/$sheetID/gviz/tq?tqx=out:csv&tq=%20select%20$nameCol%20WHERE%20$serialCol%3D%27$serialNumber%27")
+dname=$(curl --silent "https://docs.google.com/spreadsheets/d/$sheetID/gviz/tq?tqx=out:csv&tq=%20select%20$nameCol%20WHERE%20$serialCol%20%3D%27$serialNumber%27")
 
 # Remove the header information and quotes
-dname=$(echo $dname | cut -d '"' -f 2)
+dname=$(echo $dname | cut -d '"' -f 4)
 
 #Test to see if no value is returned and use serial number instead
 if test -z $dname ; then
