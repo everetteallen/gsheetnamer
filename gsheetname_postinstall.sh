@@ -7,7 +7,7 @@
 # The sheet id is   1-_KZMQ_xK1T9jenzEbElefxKFjZD08TrEyQQw3j5YaQ
 # The Google Sheet needs to be readable like Anyone One with Link Can View
 # Replace _ with the id of the Google sheet you have created
-# WARNING do not put text in row 1 of the sheet as the VIS api will see this as lables and return both the lable and value causing this script to fail!!
+# WARNING do not put text in row 1 of the sheet as the VIS api will see this as lables and return both the label and value causing this script to fail!!
 sheetID="_"
 
 
